@@ -43,7 +43,7 @@ const productSchema = new Schema({
     required: true,
   },
   shopId: {
-    type: ObjectId,
+    type: Schema.Types.ObjectId,
     required: true,
   },
   shopName: {
