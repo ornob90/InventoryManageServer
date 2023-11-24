@@ -1,6 +1,6 @@
-const getShopInfo = require("../../lib/shop/getShopInfo");
-const updateShopInfo = require("../../lib/shop/updateShopInfo");
-const Product = require("../../models/product");
+const getShopInfo = require("../../../lib/shop/getShopInfo");
+const updateShopInfo = require("../../../lib/shop/updateShopInfo");
+const Product = require("../../../models/product");
 
 const addProduct = async (req, res, next) => {
   try {
