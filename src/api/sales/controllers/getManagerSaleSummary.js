@@ -1,4 +1,5 @@
 const getTotalInvest = require("../../../utils/manager/getTotalInvest");
+const getTotalProfit = require("../../../utils/manager/getTotalProfit");
 const getTotalSales = require("../../../utils/manager/getTotalSales");
 
 const getManagerSaleSummary = async (req, res, next) => {
@@ -6,8 +7,10 @@ const getManagerSaleSummary = async (req, res, next) => {
 
   const totalInvest = await getTotalInvest(email);
   const totalSales = await getTotalSales(email);
-  console.log(totalSales);
-  res.send({ totalInvest, totalSales });
+  const totalProfit = await getTotalProfit(email);
+  // console.log(totalSales);
+
+  res.send({ totalInvest, totalSales, totalProfit });
 };
 
 module.exports = getManagerSaleSummary;
