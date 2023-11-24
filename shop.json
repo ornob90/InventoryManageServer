@@ -1,0 +1,38 @@
+[
+  {
+    "shopName": "electronics_store",
+    "shopLogo": "https://example.com/electronics_logo.png",
+    "productLimit": 100,
+    "shopDescription": "We sell the latest electronics.",
+    "shopOwnerEmail": "electronics_owner@example.com",
+    "shopOwnerName": "John Doe",
+    "notices": [
+      "Welcome to our electronics store!",
+      "Special discounts this week."
+    ]
+  },
+  {
+    "shopName": "fashion_boutique",
+    "shopLogo": "https://example.com/fashion_logo.png",
+    "productLimit": 150,
+    "shopDescription": "Trendy and stylish fashion.",
+    "shopOwnerEmail": "fashion_owner@example.com",
+    "shopOwnerName": "Jane Smith",
+    "notices": [
+      "Discover the latest fashion trends.",
+      "Free shipping on orders over $50."
+    ]
+  },
+  {
+    "shopName": "book_corner",
+    "shopLogo": "https://example.com/book_logo.png",
+    "productLimit": 200,
+    "shopDescription": "A paradise for book lovers.",
+    "shopOwnerEmail": "book_owner@example.com",
+    "shopOwnerName": "Alice Johnson",
+    "notices": [
+      "Explore our vast collection of books.",
+      "Buy 2, get 1 free on all novels."
+    ]
+  }
+]

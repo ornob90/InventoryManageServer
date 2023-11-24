@@ -1,0 +1,50 @@
+[
+  {
+    "product_name": "Fantasy Novel",
+    "image": "https://example.com/novel_image.png",
+    "product_quantity": 100,
+    "product_location": "Fiction Section",
+    "production_cost": 10,
+    "profit_margin": 30,
+    "discount": 15,
+    "product_description": "Best-selling fantasy novel with captivating storylines.",
+    "selling_price": 17.375,
+    "shop_id": "book_corner",
+    "shop_name": "book_corner",
+    "user_email": "book_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  },
+  {
+    "product_name": "Mystery Thriller",
+    "image": "https://example.com/thriller_image.png",
+    "product_quantity": 75,
+    "product_location": "Mystery Section",
+    "production_cost": 15,
+    "profit_margin": 25,
+    "discount": 10,
+    "product_description": "Gripping mystery thriller that will keep you on the edge of your seat.",
+    "selling_price": 21.09375,
+    "shop_id": "book_corner",
+    "shop_name": "book_corner",
+    "user_email": "book_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  },
+  {
+    "product_name": "Classic Poetry Collection",
+    "image": "https://example.com/poetry_image.png",
+    "product_quantity": 50,
+    "product_location": "Poetry Section",
+    "production_cost": 8,
+    "profit_margin": 20,
+    "discount": 12,
+    "product_description": "Timeless collection of classic poetry from renowned poets.",
+    "selling_price": 12.7,
+    "shop_id": "book_corner",
+    "shop_name": "book_corner",
+    "user_email": "book_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  }
+]

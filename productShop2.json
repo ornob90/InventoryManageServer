@@ -1,0 +1,50 @@
+[
+  {
+    "product_name": "Designer Dress",
+    "image": "https://example.com/dress_image.png",
+    "product_quantity": 30,
+    "product_location": "Women's Fashion",
+    "production_cost": 150,
+    "profit_margin": 20,
+    "discount": 10,
+    "product_description": "Elegant designer dress for special occasions.",
+    "selling_price": 201, // Buying Price + (7.5% Tax) + (profit percentage)
+    "shop_id": "fashion_boutique",
+    "shop_name": "fashion_boutique",
+    "user_email": "fashion_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  },
+  {
+    "product_name": "Formal Suit",
+    "image": "https://example.com/suit_image.png",
+    "product_quantity": 25,
+    "product_location": "Men's Fashion",
+    "production_cost": 250,
+    "profit_margin": 15,
+    "discount": 8,
+    "product_description": "Classic formal suit for a sophisticated look.",
+    "selling_price": 298.75, // Buying Price + (7.5% Tax) + (profit percentage)
+    "shop_id": "fashion_boutique",
+    "shop_name": "fashion_boutique",
+    "user_email": "fashion_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  },
+  {
+    "product_name": "Casual Jeans",
+    "image": "https://example.com/jeans_image.png",
+    "product_quantity": 50,
+    "product_location": "Denim Section",
+    "production_cost": 50,
+    "profit_margin": 25,
+    "discount": 15,
+    "product_description": "Comfortable and stylish casual jeans for everyday wear.",
+    "selling_price": 72.8125, // Buying Price + (7.5% Tax) + (profit percentage)
+    "shop_id": "fashion_boutique",
+    "shop_name": "fashion_boutique",
+    "user_email": "fashion_owner@example.com",
+    "added_date": "2023-11-23",
+    "sale_count": 0
+  }
+]
