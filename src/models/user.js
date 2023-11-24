@@ -25,6 +25,9 @@ const userSchema = new Schema({
   shopLogo: {
     type: String,
   },
+  income: {
+    type: Number,
+  },
 });
 
 const User = model("User", userSchema);

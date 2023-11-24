@@ -1,6 +1,6 @@
-const getTotalInvest = require("../../../utils/manager/getTotalInvest");
-const getTotalProfit = require("../../../utils/manager/getTotalProfit");
-const getTotalSales = require("../../../utils/manager/getTotalSales");
+const getTotalInvest = require("../../../lib/manager/getTotalInvest");
+const getTotalProfit = require("../../../lib/manager/getTotalProfit");
+const getTotalSales = require("../../../lib/manager/getTotalSales");
 
 const getManagerSaleSummary = async (req, res, next) => {
   const { email } = req.query;
