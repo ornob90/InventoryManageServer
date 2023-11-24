@@ -11,7 +11,7 @@ const updateProduct = async (req, res, next) => {
       { _id: new ObjectId(id) },
       { $set: newData }
     );
-    console.log(res);
+    // console.log(result);
 
     res.send({
       message: "Updated successfully!",
