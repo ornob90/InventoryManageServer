@@ -3,7 +3,8 @@ const Shop = require("../../../models/shop");
 
 const addShop = async (req, res) => {
   try {
-    const shopData = { ...req.body, productLimit: 3 };
+    // const shopData = { ...req.body, productLimit: 3 };
+    const shopData = req.body;
 
     const shop = new Shop(shopData);
 

@@ -19,7 +19,7 @@ const shopSchema = new Schema({
   },
   productLimit: {
     type: Number,
-    required: true,
+    default: 3,
   },
   shopOwnerEmail: {
     type: String,
