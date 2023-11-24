@@ -9,11 +9,9 @@
     "discount": 5,
     "productDescription": "High-end smartphone with advanced features.",
     "sellingPrice": 232.125,
-    "shopId": "electronics_store",
+    "shopId": "65601912923f988c8510358d",
     "shopName": "electronics_store",
-    "userEmail": "electronics_owner@example.com",
-    "addedDate": "2023-11-23",
-    "saleCount": 0
+    "userEmail": "electronics_owner@example.com"
   },
   {
     "productName": "Laptop",
