@@ -5,10 +5,9 @@ const addShop = async (req, res) => {
   try {
     // const shopData = { ...req.body, productLimit: 3 };
     const shopData = req.body;
-
-    const shop = new Shop(shopData);
-
-    await shop.save();
+    const shop = await Shop.create(shopData);
+    console.log(shop);
+    // await shop.save();
 
     const isUpdated = await updateUser(
       { email: shop.shopOwnerEmail },

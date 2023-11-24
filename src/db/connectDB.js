@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Shop = require("../models/shop");
 
 require("dotenv").config();
 
@@ -18,6 +19,14 @@ const connectDB = async () => {
   const mongoURI = getConnectionString();
 
   await mongoose.connect(mongoURI, { dbName: process.env.DB_NAME });
+
+  // Shop.collection.drop((error) => {
+  //   if (error) {
+  //     console.error("Error dropping collection:", error);
+  //   } else {
+  //     console.log("Collection dropped successfully");
+  //   }
+  // });
 
   console.log("successfully connected to database!");
 };
