@@ -12,6 +12,7 @@ const globalErrorHandler = require("./utils/globalErrorHandler");
 const shopRoutes = require("./routes/shop");
 const userRoutes = require("./routes/user");
 const productRoutes = require("./routes/product");
+const salesRoutes = require("./routes/sales");
 
 const app = express();
 
@@ -22,6 +23,7 @@ applyMiddleWare(app);
 app.use(shopRoutes);
 app.use(userRoutes);
 app.use(productRoutes);
+app.use(salesRoutes);
 
 app.get("/", (req, res) => {
   res.send("Server running...");
