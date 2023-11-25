@@ -11,6 +11,6 @@ const cartSchema = new Schema({
   },
 });
 
-const Cart = modal("Cart", cartSchema);
+const Cart = model("Cart", cartSchema);
 
 module.exports = Cart;
