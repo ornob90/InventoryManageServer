@@ -1,12 +1,12 @@
 const { ObjectId } = require("mongodb");
 const Product = require("../../../models/product");
 
-const getProductsByShop = async (req, res, next) => {
+const getProductsByEmail = async (req, res, next) => {
   try {
-    const { shopId } = req.params;
+    const { email } = req.params;
 
     const products = await Product.find({
-      shopId: new ObjectId(shopId),
+      userEmail: email,
     });
     res.send(products || {});
   } catch (error) {
@@ -15,4 +15,4 @@ const getProductsByShop = async (req, res, next) => {
   }
 };
 
-module.exports = getProductsByShop;
+module.exports = getProductsByEmail;
