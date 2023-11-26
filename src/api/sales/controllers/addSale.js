@@ -4,7 +4,7 @@ const updateProductInfo = require("../../../lib/product/updateProductInfo");
 const Sales = require("../../../models/sales");
 
 const addSale = async (req, res, next) => {
-  console.log("hit");
+  // console.log("hit");
   try {
     const salesData = req.body;
 
