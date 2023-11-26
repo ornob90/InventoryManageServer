@@ -6,10 +6,7 @@
     "shopDescription": "We sell the latest electronics.",
     "shopOwnerEmail": "electronics_owner@example.com",
     "shopOwnerName": "John Doe",
-    "notices": [
-      "Welcome to our electronics store!",
-      "Special discounts this week."
-    ]
+    "shopLocation": "Dhaka, Bangladesh"
   },
   {
     "shopName": "fashion_boutique",

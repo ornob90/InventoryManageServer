@@ -14,7 +14,11 @@ const getProductDetails = async (req, res, next) => {
       productName: 1,
       image: 1,
       productQuantity: 1,
-      saleCount: 1,
+      productLocation: 1,
+      productionCost: 1,
+      profitMargin: 1,
+      discount: 1,
+      productDescription: 1,
     };
 
     const product = await Product.findOne({ _id: new ObjectId(id) }).select(

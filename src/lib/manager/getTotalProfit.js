@@ -12,9 +12,8 @@ const getTotalProfit = async (email) => {
     },
   ];
 
-  const [{ totalProfit }] = (await Sales.aggregate(pipeline).exec()) || [
-    { totalProfit: 0 },
-  ];
+  const result = (await Sales.aggregate(pipeline).exec()) || [];
+  const totalProfit = result[0]?.totalProfit || 0;
 
   return totalProfit;
 };

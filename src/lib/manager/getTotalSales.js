@@ -27,10 +27,10 @@ const getTotalSales = async (email) => {
       },
     },
   ];
+  const result = (await Sales.aggregate(pipeline).exec()) || [];
+  // console.log(result);
 
-  const [{ totalSales }] = (await Sales.aggregate(pipeline).exec()) || [
-    { totalSales: 0 },
-  ];
+  const totalSales = result[0]?.totalSales || 0;
 
   return totalSales;
 };

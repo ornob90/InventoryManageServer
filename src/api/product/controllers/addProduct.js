@@ -6,9 +6,9 @@ const addProduct = async (req, res, next) => {
   try {
     const productData = req.body;
 
-    const product = new Product(productData);
+    const shop = await getShopInfo(productData.shopId);
 
-    const shop = await getShopInfo(product.shopId);
+    const product = new Product({ ...productData, shopName: shop.shopName });
 
     if (shop.productLimit <= 0) {
       res.send({ message: "Product limit 0", insertOne: false });

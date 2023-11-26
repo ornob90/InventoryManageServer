@@ -26,9 +26,11 @@ const getTotalInvest = async (email) => {
     },
   ];
 
-  const [{ totalInvest }] = (await Sales.aggregate(pipeline).exec()) || [
+  const result = (await Sales.aggregate(pipeline).exec()) || [
     { totalInvest: 0 },
   ];
+
+  const totalInvest = result[0]?.totalInvest || 0;
 
   // return await Sales.populate("product");
 

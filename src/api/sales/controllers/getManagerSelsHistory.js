@@ -23,7 +23,7 @@ const getManagerSalesHistory = async (req, res, next) => {
       },
       {
         $project: {
-          productName: "$productInfo.userEmail",
+          productName: "$productInfo.productName",
           profit: 1,
           sellingDate: 1,
         },
