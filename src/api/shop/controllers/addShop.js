@@ -16,7 +16,7 @@ const addShop = async (req, res) => {
           shopId: shop._id,
           shopName: shop.shopName,
           shopLogo: shop.shopLogo,
-          role: "shopAdmin",
+          role: "manager",
         },
       }
     );

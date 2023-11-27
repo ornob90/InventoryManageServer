@@ -1,11 +1,8 @@
 const Sales = require("../../../models/sales");
 
-const getManagerSalesHistory = async (req, res, next) => {
+const getManagerSalesHistoryCount = async (req, res, next) => {
   try {
-    const { email, page, size } = req.query;
-
-    const pageNum = parseInt(page);
-    const pageSize = parseInt(size);
+    const { email } = req.query;
 
     const pipeline = [
       {
@@ -32,20 +29,18 @@ const getManagerSalesHistory = async (req, res, next) => {
         },
       },
       {
-        $skip: pageNum * pageSize,
-      },
-      {
-        $limit: pageSize,
+        $count: "totalDocuments",
       },
     ];
 
-    const salesHistory = await Sales.aggregate(pipeline);
+    const salesHistoryCount = await Sales.aggregate(pipeline);
+    const totalCount = salesHistoryCount[0]?.totalDocuments || 0;
 
-    res.send(salesHistory);
+    res.send({ totalCount });
   } catch (error) {
     console.error(error);
     next(error);
   }
 };
 
-module.exports = getManagerSalesHistory;
+module.exports = getManagerSalesHistoryCount;

@@ -15,6 +15,7 @@ const productRoutes = require("./routes/product");
 const salesRoutes = require("./routes/sales");
 const authRoutes = require("./routes/authentication");
 const cartRoutes = require("./routes/cart");
+const paymentRoutes = require("./routes/payment");
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use(productRoutes);
 app.use(salesRoutes);
 app.use(authRoutes);
 app.use(cartRoutes);
+app.use(paymentRoutes);
 
 app.get("/", (req, res) => {
   res.send("Server running...");
