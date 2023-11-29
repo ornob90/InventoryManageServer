@@ -2,7 +2,8 @@ const Cart = require("../../../models/cart");
 
 const getCart = async (req, res, next) => {
   try {
-    const carts = await Cart.find({}).populate("product");
+    const { email } = req.query;
+    const carts = await Cart.find({ userEmail: email }).populate("product");
 
     res.send(carts);
   } catch (error) {

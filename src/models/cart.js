@@ -9,6 +9,10 @@ const cartSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  userEmail: {
+    type: String,
+    required: true,
+  },
 });
 
 const Cart = model("Cart", cartSchema);

@@ -7,6 +7,8 @@ const addSale = async (req, res, next) => {
   // console.log("hit");
   try {
     const salesData = req.body;
+    const { email } = req.query;
+
     let updateCount = 0;
     let insertCount = 0;
 
@@ -28,7 +30,7 @@ const addSale = async (req, res, next) => {
       insertCount++;
     }
 
-    const status = await clearCart();
+    const status = await clearCart(email);
 
     res.send({
       message: "Inserted successfully!",

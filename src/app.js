@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./db/connectDB");
+const cors = require("cors");
 require("dotenv").config();
 
 // middle wares
@@ -19,6 +20,17 @@ const paymentRoutes = require("./routes/payment");
 const sendEMail = require("./utils/sendEmail");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://inventorymanage-48123.web.app",
+      "https://inventorymanage-48123.firebaseapp.com",
+    ],
+    credentials: true,
+  })
+);
 
 const port = process.env.PORT || 5000;
 
@@ -44,14 +56,16 @@ app.all("*", (req, res, next) => {
 });
 
 // error handling middleware
-app.use(globalErrorHandler);
+// app.use(globalErrorHandler);
 
-const main = async () => {
-  await connectDB();
-  // sendEMail();
-  app.listen(port, () => {
-    console.log("Server running...");
-  });
-};
+// const main = async () => {
+//   await connectDB();
+//   // sendEMail();
+//   app.listen(port, () => {
+//     console.log("Server running...");
+//   });
+// };
 
-main();
+// main();
+
+module.exports = app;
