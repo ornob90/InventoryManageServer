@@ -6,7 +6,7 @@ const addShop = async (req, res) => {
     // const shopData = { ...req.body, productLimit: 3 };
     const shopData = req.body;
     const shop = await Shop.create(shopData);
-    console.log(shop);
+    // console.log(shop);
     // await shop.save();
 
     const isUpdated = await updateUser(

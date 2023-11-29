@@ -6,8 +6,8 @@ const verifyShopAdmin = async (req, res, next) => {
 
     const { role } = await User.findOne({ email });
     // console.log(role);
-    if (!role || role !== "shopAdmin") {
-      res.status(403).send({ message: "unauthorized access" });
+    if (!role || role !== "manager") {
+      res.status(403).send({ message: "unauthorized access3" });
     } else {
       next();
     }

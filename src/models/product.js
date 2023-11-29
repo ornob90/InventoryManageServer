@@ -62,6 +62,13 @@ const productSchema = new Schema({
     type: Number,
     default: 0,
   },
+
+  couponCode: {
+    type: String,
+  },
+  couponExpire: {
+    type: Date,
+  },
 });
 
 const Product = model("Product", productSchema);

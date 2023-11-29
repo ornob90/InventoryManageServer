@@ -16,6 +16,7 @@ const salesRoutes = require("./routes/sales");
 const authRoutes = require("./routes/authentication");
 const cartRoutes = require("./routes/cart");
 const paymentRoutes = require("./routes/payment");
+const sendEMail = require("./utils/sendEmail");
 
 const app = express();
 
@@ -47,6 +48,7 @@ app.use(globalErrorHandler);
 
 const main = async () => {
   await connectDB();
+  // sendEMail();
   app.listen(port, () => {
     console.log("Server running...");
   });

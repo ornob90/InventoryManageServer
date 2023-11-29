@@ -6,6 +6,9 @@ const getShopID = async (req, res, next) => {
 
     const shopID = await Shop.findOne({ shopOwnerEmail: email }, { _id: 1 });
     res.send({ shopID: shopID._id });
+
+      
+
   } catch (error) {
     console.error(error.message);
     next(error);

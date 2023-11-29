@@ -32,6 +32,11 @@ const getManagerSalesHistory = async (req, res, next) => {
         },
       },
       {
+        $sort: {
+          sellingDate: -1,
+        },
+      },
+      {
         $skip: pageNum * pageSize,
       },
       {
